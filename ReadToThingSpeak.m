@@ -1,0 +1,10 @@
+clc;
+clear;
+channelID=2035508;
+readAPIKey='OOEMTLPVPBMDOPDJ';
+MQ2=thingSpeakRead(channelID,'Fields',1,'ReadKey',readAPIKey);
+Temp=thingSpeakRead(channelID,'Fields',2,'ReadKey',readAPIKey);
+ultrasonic=thingSpeakRead(channelID,'Fields',3,'ReadKey',readAPIKey);
+disp(MQ2);
+disp(Temp);
+disp(ultrasonic);
